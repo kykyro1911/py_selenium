@@ -2,9 +2,8 @@ from selenium import webdriver
 import time
 
 browser = webdriver.Chrome()
-
 #browser = webdriver.Firefox()
-
+'''
 browser.get("http://www.baidu.com")
 
 browser.find_element_by_id("kw").send_keys("selenium")
@@ -15,6 +14,10 @@ browser.find_element_by_id("su").click()
 
 browser.implicitly_wait(30)
 time.sleep(3)
+'''
+
+a = browser.find_element_by_class_id("logo_default")
+print(a)
 
 
 browser.quit()
