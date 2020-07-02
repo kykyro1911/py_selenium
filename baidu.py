@@ -1,4 +1,5 @@
-"""from selenium import webdriver
+"""
+from selenium import webdriver
 from time import sleep
 
 
@@ -33,6 +34,7 @@ time.sleep(3)
 
 driver.quit()
 '''
+
 from selenium import webdriver
 # 引入 ActionChains 类
 from selenium.webdriver.common.action_chains import ActionChains

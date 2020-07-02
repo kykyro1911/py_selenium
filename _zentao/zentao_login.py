@@ -1,8 +1,8 @@
-from zentao_login import read_cfg
+from zentao_cfg import read_cfg
 from selenium import webdriver
 import time
 
-def main():
+def web_login():
     #read_ini
     cfg_data = read_cfg()
 
@@ -25,8 +25,10 @@ def main():
     driver.implicitly_wait(30)
 
     #quit_Chrome
-    driver.close()
-    driver.quit()
+    #driver.close()
+    #driver.quit()
+
+    return driver
 
 if __name__ == "__main__":
-    main()
+    web_login()
